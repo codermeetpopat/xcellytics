@@ -1,0 +1,33 @@
+.register-bg {
+  min-height: 85vh;
+  width: 100vw;
+  background-image: url('https://ibb.co/DPF6Mx94');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.register-bg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:linear-gradient(90deg, hsla(191, 88%, 81%, 1) 0%, hsla(260, 72%, 82%, 1) 50%, hsla(247, 73%, 69%, 1) 100%);
+  z-index: 1;
+}
+.register-content {
+  position: relative;
+  z-index: 2;
+    text-align: center;
+  margin-right: 490px;
+}
+
+.register-content h2{
+    color: red;
+}
+
+.register-content input {
+    color: black;
+}
